@@ -17,7 +17,8 @@ import DeckGL from '@deck.gl/react';
  * then that data will be available in
  */
 function MyCustomWidget(_props) {
-    return <div>Hello from custom widget</div>;
+    console.log(process.env.MAPBOX_TOKEN);
+    return <div>Hello from custom widget: {process.env.MAPBOX_TOKEN}</div>;
 }
 
 export class Plugin extends DashboardPluginV1 {

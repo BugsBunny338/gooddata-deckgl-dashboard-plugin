@@ -86,6 +86,12 @@ module.exports = (_env, argv) => {
         },
         module: {
             rules: [
+                {
+                    test: /\.m?js$/,
+                    resolve: {
+                      fullySpecified: false
+                    },
+                },
                 // TS source files in case TS is used
                 {
                     test: /\.tsx?$/,
