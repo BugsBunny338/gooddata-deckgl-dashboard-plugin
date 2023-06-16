@@ -9,6 +9,8 @@ import {
 import entryPoint from "../dp_gooddata_deckgl_dashboard_plugin_entry";
 
 import React from "react";
+import { StaticMap } from 'react-map-gl';
+import DeckGL from '@deck.gl/react';
 
 /*
  * Component to render 'myCustomWidget'. If you create custom widget instance and also pass extra data,
